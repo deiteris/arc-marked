@@ -1,4 +1,4 @@
-import * as marked from 'marked/lib/marked.js';
+import {marked} from 'marked';
 /* istanbul ignore if */
 if (!window.marked) {
   // For webpack support for the Polymer 3 version created by the Polymer
