@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import { html, css, LitElement } from 'lit-element';
 import sanitizer from 'dompurify';
-import './marked-import.js';
+import marked from './marked-import.js';
 
 /**
 Element wrapper for the [marked](https://github.com/chjj/marked) library.
@@ -329,7 +329,6 @@ export class ArcMarkedElement extends LitElement {
       this._outputElement.innerHTML = '';
       return;
     }
-    /* global marked */
     // @ts-ignore
     const renderer = new marked.Renderer();
 
